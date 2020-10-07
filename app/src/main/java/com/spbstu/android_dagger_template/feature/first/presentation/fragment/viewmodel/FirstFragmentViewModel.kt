@@ -10,20 +10,17 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 class FirstFragmentViewModel @Inject constructor() : ViewModel() {
-
-    init {
-        GlobalScope.launch(Dispatchers.IO) {
-            startInfo()
-        }
+    private val _infoText = MutableLiveData<String>().also {
+        loadInfo()
     }
-
-    private val _infoText = MutableLiveData<String>()
     val infoText: LiveData<String> = _infoText
 
-    private suspend fun startInfo() {
-        while (true) {
-            delay(1000)
-            _infoText.value = System.currentTimeMillis().toString()
+    private fun loadInfo() {
+        GlobalScope.launch(Dispatchers.IO) {
+            while (true) {
+                delay(1000)
+                _infoText.postValue(System.currentTimeMillis().toString())
+            }
         }
     }
 }
