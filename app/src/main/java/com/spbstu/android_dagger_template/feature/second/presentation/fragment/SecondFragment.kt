@@ -34,6 +34,6 @@ class SecondFragment : Fragment(), Injectable {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
+        viewModel.edit()
     }
 }
