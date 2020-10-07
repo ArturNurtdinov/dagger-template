@@ -1,4 +1,4 @@
-package com.spbstu.android_dagger_template.feature.first.presentation.fragment.viewmodel
+package com.spbstu.android_dagger_template.feature.first.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

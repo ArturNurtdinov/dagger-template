@@ -1,4 +1,4 @@
-package com.spbstu.android_dagger_template.feature.first.presentation.fragment.fragment
+package com.spbstu.android_dagger_template.feature.first.presentation.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.spbstu.android_dagger_template.R
 import com.spbstu.android_dagger_template.di.injector.Injectable
-import com.spbstu.android_dagger_template.feature.first.presentation.fragment.viewmodel.FirstFragmentViewModel
+import com.spbstu.android_dagger_template.feature.first.presentation.viewmodel.FirstFragmentViewModel
 import kotlinx.android.synthetic.main.fragment_first.*
 import javax.inject.Inject
 
