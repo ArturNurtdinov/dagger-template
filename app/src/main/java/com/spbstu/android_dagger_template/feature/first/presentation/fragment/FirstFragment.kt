@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.spbstu.android_dagger_template.R
 import com.spbstu.android_dagger_template.di.injector.Injectable
 import com.spbstu.android_dagger_template.feature.first.presentation.viewmodel.FirstFragmentViewModel
@@ -39,5 +40,7 @@ class FirstFragment : Fragment(), Injectable {
         viewModel.infoText.observe(viewLifecycleOwner, Observer {
             frg_first__text.text = it
         })
+
+        findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
     }
 }

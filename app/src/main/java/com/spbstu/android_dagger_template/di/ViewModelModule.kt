@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.spbstu.android_dagger_template.ViewModelFactory
 import com.spbstu.android_dagger_template.feature.first.presentation.viewmodel.FirstFragmentViewModel
+import com.spbstu.android_dagger_template.feature.second.presentation.viewmodel.SecondFragmentViewModel
 
 import dagger.Binds
 import dagger.MapKey
@@ -17,6 +18,11 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(FirstFragmentViewModel::class)
     abstract fun bindFirstFragmentViewModel(fragmentViewModel: FirstFragmentViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(SecondFragmentViewModel::class)
+    abstract fun bindSecondFragmentViewModel(secondFragmentViewModel: SecondFragmentViewModel): ViewModel
 
     @Binds
     abstract fun bindViewModelFactory(factory: ViewModelFactory): ViewModelProvider.Factory

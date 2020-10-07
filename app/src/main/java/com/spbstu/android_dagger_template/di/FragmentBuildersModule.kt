@@ -1,6 +1,7 @@
 package com.spbstu.android_dagger_template.di
 
 import com.spbstu.android_dagger_template.feature.first.presentation.fragment.FirstFragment
+import com.spbstu.android_dagger_template.feature.second.presentation.fragment.SecondFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -9,4 +10,6 @@ import dagger.android.ContributesAndroidInjector
 abstract class FragmentBuildersModule {
     @ContributesAndroidInjector
     abstract fun contributeFirstFragment(): FirstFragment
+    @ContributesAndroidInjector
+    abstract fun contributeSecondFragment(): SecondFragment
 }
