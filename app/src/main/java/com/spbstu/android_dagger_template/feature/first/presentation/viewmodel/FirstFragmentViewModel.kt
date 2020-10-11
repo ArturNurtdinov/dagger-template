@@ -18,7 +18,7 @@ class FirstFragmentViewModel @Inject constructor() : ViewModel() {
     private fun loadInfo() {
         viewModelScope.launch(Dispatchers.IO) {
             while (true) {
-                delay(1000)
+                delay(10)
                 _infoText.postValue(System.currentTimeMillis().toString())
             }
         }
