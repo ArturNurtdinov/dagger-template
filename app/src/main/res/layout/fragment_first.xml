@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.first.presentation.fragment.FirstFragment">
+    tools:context=".feature.first.presentation.FirstFragment">
 
     <TextView
         android:id="@+id/frg_first__text"

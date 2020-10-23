@@ -1,4 +1,4 @@
-package com.spbstu.android_dagger_template.feature.second.presentation.viewmodel
+package com.spbstu.android_dagger_template.feature.second.presentation
 
 import android.content.SharedPreferences
 import androidx.lifecycle.ViewModel

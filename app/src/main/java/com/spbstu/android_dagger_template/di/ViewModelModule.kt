@@ -3,8 +3,8 @@ package com.spbstu.android_dagger_template.di
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.spbstu.android_dagger_template.ViewModelFactory
-import com.spbstu.android_dagger_template.feature.first.presentation.viewmodel.FirstFragmentViewModel
-import com.spbstu.android_dagger_template.feature.second.presentation.viewmodel.SecondFragmentViewModel
+import com.spbstu.android_dagger_template.feature.first.presentation.FirstFragmentViewModel
+import com.spbstu.android_dagger_template.feature.second.presentation.SecondFragmentViewModel
 
 import dagger.Binds
 import dagger.MapKey
