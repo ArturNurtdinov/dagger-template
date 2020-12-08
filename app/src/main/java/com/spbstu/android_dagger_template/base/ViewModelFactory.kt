@@ -1,13 +1,14 @@
-package com.spbstu.android_dagger_template
+package com.spbstu.android_dagger_template.base
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.spbstu.android_dagger_template.di.scope.FeatureScope
 
 import javax.inject.Inject
 import javax.inject.Provider
 import javax.inject.Singleton
 
-@Singleton
+@FeatureScope
 class ViewModelFactory @Inject constructor(
     private val creators: Map<Class<out ViewModel>, @JvmSuppressWildcards Provider<ViewModel>>
 ) : ViewModelProvider.Factory {

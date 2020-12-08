@@ -1,14 +1,13 @@
 package com.spbstu.android_dagger_template.di
 
-import com.spbstu.android_dagger_template.feature.second.di.SecondModule
 import dagger.Module
+import dagger.android.support.AndroidSupportInjectionModule
 
 @Module(
     includes = [
-        ViewModelModule::class,
-        SecondModule::class
+        AndroidSupportInjectionModule::class,
+        MainActivityModule::class
     ]
 )
 class AppModule {
-
 }
