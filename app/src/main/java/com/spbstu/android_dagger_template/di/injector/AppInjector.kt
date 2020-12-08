@@ -10,7 +10,6 @@ import androidx.fragment.app.FragmentManager
 import com.spbstu.android_dagger_template.App
 import com.spbstu.android_dagger_template.di.DaggerAppComponent
 import dagger.android.AndroidInjection
-import dagger.android.HasAndroidInjector
 import dagger.android.support.AndroidSupportInjection
 
 object AppInjector {

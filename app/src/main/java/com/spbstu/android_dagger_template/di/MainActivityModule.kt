@@ -10,7 +10,6 @@ abstract class MainActivityModule {
     @ContributesAndroidInjector(
         modules = [
             FragmentBuildersModule::class,
-            ViewModelModule::class,
             MainModule::class
         ]
     )
